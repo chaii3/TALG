@@ -30,7 +30,7 @@ interface Apartment {
 	rooms: number;
 
 	/** Размер квартиры. */
-	size: '3k';
+	size: string;
 
 	/** количество квадратных метров. */
 	square: number;

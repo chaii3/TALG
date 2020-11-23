@@ -9,7 +9,7 @@ Vue.use(Vuex);
 const store: StoreOptions<StoreState> = {
 	strict: true,
 	state:  {
-		apartments: '1231231',
+		apartments: [],
 	},
 	getters,
 	mutations,
