@@ -1,0 +1,26 @@
+.filters-buttons {
+	display:         flex;
+	flex-flow:       column nowrap;
+	justify-content: flex-end;
+	text-align:      center;
+}
+
+.filters {
+	&__use-button {
+		text-transform:   uppercase;
+		background-color: #70d24e;
+		padding:          10px 50px;
+		color:            #fff;
+		font-weight:      700;
+		font-size:        14px;
+		margin-bottom:    10px;
+		cursor:           pointer;
+	}
+
+	&__restart-button {
+		cursor:          pointer;
+		font-size:       10px;
+		font-weight:     700;
+		text-decoration: underline;
+	}
+}

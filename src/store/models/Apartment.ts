@@ -26,7 +26,7 @@ interface Apartment {
 	/** Цена */
 	price: number;
 
-	/** Количество кмонат  */
+	/** Количество комнат  */
 	rooms: number;
 
 	/** Размер квартиры. */

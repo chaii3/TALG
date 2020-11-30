@@ -1,3 +1,4 @@
 interface StoreState {
-	apartments: Apartment[] | string,
+	apartments: Apartment[],
+	activeApartments: Apartment[],
 }

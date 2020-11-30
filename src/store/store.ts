@@ -9,11 +9,12 @@ Vue.use(Vuex);
 const store: StoreOptions<StoreState> = {
 	strict: true,
 	state:  {
-		apartments: [],
+		apartments:       [],
+		activeApartments: [],
 	},
 	getters,
 	mutations,
 	actions,
-}
+};
 
 export default new Vuex.Store(store);

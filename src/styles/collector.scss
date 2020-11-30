@@ -1,2 +1,6 @@
-@import './components/apartemnts.scss';
-@import './components/app.scss';
+@import 'components/apartment';
+@import "components/filters/two-ranges-filter";
+@import "components/filters/filters-buttons";
+@import "components/filters/filters";
+@import 'components/filters/room-filter';
+@import './components/app';

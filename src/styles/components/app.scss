@@ -1,5 +1,40 @@
+::-webkit-scrollbar {
+	width:            1px; /* ширина для вертикального скролла */
+	background-color: #f8f8f8;
+}
+
+.app-header {
+	text-align:     center;
+	padding-top:    30px;
+	padding-bottom: 30px;
+	font-size:      34px;
+	font-weight:    400;
+}
+
+body {
+	margin:     5px;
+	background: #f8f8f8;
+}
+
+main {
+	max-width:    1170px;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
+mark {
+	color:      #c4c4c4;
+	background: none;
+}
+
+.marked-text {
+	color: #dedede;
+}
+
+
 .apartments-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+	margin-left:  auto;
+	margin-right: auto;
+	height:       100vh;
+	overflow-y:   scroll;
 }

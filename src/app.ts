@@ -2,19 +2,21 @@
 import Component from 'vue-class-component';
 import Vue from 'vue';
 import ApartmentCard from './components/ApartmentCard';
+import Filters from './components/Filters/filters';
 import * as StoreOperations from './store/models/types';
 
-
 @Component({
-	template: `
-	          <div>
-								<article class="apartments-wrapper">
-									<ApartmentCard v-for="apart in apartments" :apartment="apart" />
-								</article>
-</div>
-      `,
+	template:   `
+                  <main>
+	                  <Filters></Filters>
+	                  <article class="apartments-wrapper">
+	                    <ApartmentCard v-for="apart in apartments" :apartment="apart"/>
+	                  </article>
+                  </main>
+	            `,
 	components: {
 		ApartmentCard,
+		Filters,
 	},
 })
 export default class App extends Vue {
@@ -23,6 +25,6 @@ export default class App extends Vue {
 	}
 
 	get apartments(): Apartment[] {
-		return this.$store.getters[StoreOperations.GET_APARTMENTS];
+		return this.$store.getters[StoreOperations.GET_ACTIVE_APARTMENTS];
 	}
 }

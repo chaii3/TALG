@@ -6,11 +6,18 @@ const actions: ActionTree<StoreState, any> = {
 		//url для json-server (npm package).
 		fetch('http://localhost:3000/data')
 			.then(response => {
-			return response.json();
+				return response.json();
 			}).then((data: Apartment[]) => {
-			context.commit(StoreOperations.SET_APARTMENTS, data)
-			});
+				context.commit(StoreOperations.SET_APARTMENTS, data);
+
+				context.commit(StoreOperations.USE_FILTERS, <FiltersValue> {
+					rooms: 0,
+					floors: null,
+					square: null,
+					price: null,
+				});
+		});
 	}
-}
+};
 
 export default actions;

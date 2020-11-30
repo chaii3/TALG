@@ -1,0 +1,46 @@
+.two-ranges-filter {
+	display: inline-block;
+
+	&__values {
+		display:         flex;
+		align-items:     center;
+		justify-content: space-between;
+	}
+
+	&__value-item {
+		background-color: #fff;
+		padding:          10px 22px;
+		border:           1px solid #d8d8d8;
+		border-radius:    5px;
+		min-width:        16px;
+		text-align:       center;
+		max-width:        27px;
+		outline: none;
+	}
+
+	&__inputs {
+		display:         flex;
+		justify-content: center;
+		align-items:     center;
+	}
+}
+
+input[type="range"] {
+	-webkit-appearance: none;
+	height:             2px;
+	border:             none;
+	outline:            none;
+	width:              88px;
+	margin-top:         15px;
+	margin-bottom:      15px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background-color:   #70d24e;
+	border:             2px solid #fff;
+	width:              20px;
+	height:             20px;
+	border-radius:      10px;
+	cursor:             pointer;
+}
